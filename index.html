@@ -6,15 +6,48 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="style.css">
 	<title>Portfolio</title>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<!-- Navigation -->
+
+	<nav class="navbar">
+		<span class="open-slide">
+			<a href="#" onclick="openSideMenu()">
+				<svg width="30" height="30">
+				<path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+				<path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+				<path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+				</svg>
+			</a>
+		</span>
+		
+		<ul class="navbar-nav">
+			<li><a href="#showcase">About</a></li>
+			<li><a href="#skills-container">Skills</a></li>
+			<li><a href="#section-c">Portfolio</a></li>
+			<li><a href="#price">Pricing</a></li>
+			<li><a href="#section-d">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+		<a href="#showcase">About</a>
+		<a href="#skills-container">Skills</a>
+		<a href="#section-c">Portfolio</a>
+		<a href="#price">Pricing</a>
+		<a href="#section-d">Contact</a>
+	</div>
+
 	<!-- Header -->
 	<header id="showcase" class="grid">
 		<div class="bg-image"></div>
 		<div class="content-wrap">
 			<h1>About me</h1>
 			<p>Jestem studentką 1 roku ze specjalością "Budowa systemów Bussiness Inteligence". Interesuję się front-endem, programowaniem, Machine Learningiem, AI i statystyką. Umiem zaprojektować i stworzyć stronę internetową jak i bazę danych czy aplikację. </p>
-			<a href="#section-b" class="btn">Read More</a>
+			<a href="#section-c" class="btn">Portfolio</a>
 		</div>
 	</header>
 
@@ -27,9 +60,168 @@
 				<div class="content-text">
 					<p>Dwa lata temu spróbowałam darmowego kursu tworzenia stron WWW i zrozumiałam, że to jest to, co chcę robić w życiu. Od tamtej pory samodzielnie uczę się technologii, takich jak HTML5, CSS3, JavaScript, jQuery, Wordpress i wiele, wiele innych! Każdy projekt jest dla mnie nowym wyzwaniem, do którego ukończenia wkładam dużo serca.Poszukuję pierwszej pracy jako Front-End Developer w Krakowie, aby móc wykorzystywać swoje umiejętności w praktyce i zdobywać nowe.</p>
 				</div>
+				<div id="skills-container">
+						<h2>- Proffesional skills -</h2>
+						<p>HTML</p>
+						<div class="container">
+						  <div class="skills html">90%</div>
+						</div>
+
+						<p>CSS</p>
+						<div class="container">
+						  <div class="skills css">80%</div>
+						</div>
+
+						<p>JavaScript</p>
+						<div class="container">
+						  <div class="skills js">65%</div>
+						</div>
+
+						<p>SQL</p>
+						<div class="container">
+						  <div class="skills sql">70%</div>
+						</div>
+
+						<p>React</p>
+						<div class="container">
+						  <div class="skills react">70%</div>
+						</div>
+
+						<p>SASS, Webpack</p>
+						<div class="container">
+						  <div class="skills sass">80%</div>
+						</div>
+					</div>
+				<div class="services-container">
+					<h2>- My services -</h2>
+					<div class="services">
+						<div class="service-box">
+							<i class="fa fa-wrench" style="font-size:36px"></i>
+							<h3>Design</h3>
+							<h4>UI/UX design</h4>
+							<hr>
+							<p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can. </p>
+						</div>
+
+						<div class="service-box">
+							<i class="fa fa-wifi" style="font-size:36px"></i>
+							<h3>Web developer</h3>
+							<h4>UI/UX design</h4>
+							<hr>
+							<p>Vitamin B is more often referred to today as the B vitamins to better relate that it is actually a group of 8 different vitamins, with varying functions and sources. </p>
+						</div>
+
+						<div class="service-box">
+							<i class="fa fa-thumbs-down" style="font-size:36px"></i>
+							<h3>Marketing</h3>
+							<h4>SEO</h4>
+							<hr>
+							<p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can</p>
+						</div>
+
+						<div class="service-box">
+							<i class="fa fa-support" style="font-size:36px"></i>
+							<h3>Wordpress</h3>
+							<h4>UI/UX design</h4>
+							<hr>
+							<p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can</p>
+						</div>
+
+						<div class="service-box">
+							<i class="fa fa-star" style="font-size:36px"></i>
+							<h3>Design</h3>
+							<h4>UI/UX design</h4>
+							<hr>
+							<p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can</p>
+						</div>
+
+						<div class="service-box">
+							<i class=" 	fa fa-signal" style="font-size:36px"></i>
+							<h3>Data science</h3>
+							<h4>Graphs</h4>
+							<hr>
+							<p>Herbs are fun and easy to grow. When harvested they make even the simplest meal seem like a gourmet delight. By using herbs in your cooking you can</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- TIME LINE -->
+		<span class="tech"><h2>- Using Technologies - </h2></span>
+		<div id="timeline">
+					<div class="demo-card-wrapper">
+					<div class="demo-card demo-card--step1">
+						<div class="head">
+							<div class="number-box">
+								<span>01</span>
+							</div>
+							<h2><span class="small">Technology</span> Elastic</h2>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+							<img src="4.png" alt="Graphic">
+						</div>
+					</div>
+
+					<div class="demo-card demo-card--step2">
+						<div class="head">
+							<div class="number-box">
+								<span>02</span>
+							</div>
+							<h2><span class="small">Technology</span> Excel</h2>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+							<img src="4.png" alt="Graphic">
+						</div>
+					</div>
+
+					<div class="demo-card demo-card--step3">
+						<div class="head">
+							<div class="number-box">
+								<span>03</span>
+							</div>
+							<h2><span class="small">Technology</span> Hadoop</h2>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+							<img src="4.png" alt="Graphic">
+						</div>
+					</div>
+
+					<div class="demo-card demo-card--step4">
+						<div class="head">
+							<div class="number-box">
+								<span>04</span>
+							</div>
+							<h2><span class="small">Technology</span> Spark</h2>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+							<img src="4.png" alt="Graphic">
+						</div>
+					</div>
+
+					<div class="demo-card demo-card--step5">
+						<div class="head">
+							<div class="number-box">
+								<span>05</span>
+							</div>
+							<h2><span class="small">Technology</span> Scala</h2>
+						</div>
+						<div class="body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+							<img src="4.png" alt="Graphic">
+						</div>
+					</div>
+			    
+				</div>
+				
+			
+				</div>
 			</div>
 		</section>
 		<!-- Section B -->
+		<h2>- Expierience Field -</h2>
 		<section id="section-b" class="grid">
 			<ul>
 				<li>
@@ -37,17 +229,16 @@
 						<img src="1.jpg" alt="trees">
 						<div class="card-content">
 							<h3 class="card-title">Web Development</h3>
-							<p>HTML5(PSD do HTML)</p>
-							<p>CSS3(SCSS, Bootstrap 3, Responsive Web Design)</p>
+							<p>HTML5(PSD to HTML)</p>
+							<p>CSS3(SCSS, Bootstrap 4, Responsive Web Design)</p>
 							<p>JavaScript(ES6, jQuery)</p>
-							<p>Wordpress(tworzenie szablonów, zarządzanie stroną)</p>       
-							<p>React - nauka</p>        
+							<p>Wordpress</p>          
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="card">
-						<img src="2.jpeg" alt="stars">
+						<img src="3.jpeg" alt="stars">
 						<div class="card-content">
 							<h3 class="card-title">Web Design</h3>
 							<p>Adobe Photoshop</p>
@@ -58,25 +249,188 @@
 				</li>
 				<li>
 					<div class="card">
-						<img src="3.jpeg" alt="stars">
+						<img src="2.jpeg" alt="stars">
 						<div class="card-content">
 							<h3 class="card-title">Data Science</h3>
-							<p>Git</p>
-							<p>Gulp.js</p>
-							<p>PHP</p>
+							<p>Scala</p>
+							<p>Hadoop</p>
+							<p>Spark</p>
+							<p>Elastic</p>
 						</div>
 					</div>
 				</li>
 			</ul>
 		</section>
 
+
+
 		<!-- Section C -->
 		<section id="section-c" class="grid">
 			<div class="content-wrap">
-				<h2 class="content-title">Realizacje</h2>
+				<h2 class="content-title">Portfolio</h2>
 				<p>W swoich projektach staram się dopracowywać każdy szczegół. Potrafię poświęcić wiele godzin na naukę nowych technologii, by później wykorzystać je na moich stronach i aplikacjach. Wszystkie moje projekty są responsywne i zaprojektowane tak, żeby korzystanie z nich było jak najbardziej proste i intuicyjne. W moich realizacjach nie zapominam też o osobach niepełnosprawnych - zapewniam im dostęp do wszystkich treści i opcji.</p>
-			</div>
+				
+				<div id="category-container">
+				  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+				  <button class="btn" onclick="filterSelection('web')"> Website</button>
+				  <button class="btn" onclick="filterSelection('design')"> Design</button>
+				  <button class="btn" onclick="filterSelection('data-science')"> Data Science</button>
+				</div>
+
+				<!-- Portfolio Gallery Grid -->
+				<div class="row grid">
+				  <div class="column web">
+				    <div class="content">
+				      	<a href="#img1">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img1">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Website</h4>
+				      <p>First website..</p>
+				    </div>
+				  </div>
+				  <div class="column web">
+				    <div class="content">
+				      <a href="#img2">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img2">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Website</h4>
+				      <p>Second website..</p>
+				    </div>
+				  </div>
+				  <div class="column design">
+				    <div class="content">
+				     <a href="#img3">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img3">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Design</h4>
+				      <p>Project of design..</p>
+				    </div>
+				  </div>
+
+				  <div class="column design">
+				    <div class="content">
+				      <a href="#img4">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img4">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Design</h4>
+				      <p>Project of design..</p>
+				    </div>
+				  </div>
+				  <div class="column data-science">
+				    <div class="content">
+				     <a href="#img5">
+				     	 	<img src="2.jpeg" alt="data-science">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img5">
+						    <img src="2.jpeg" >
+						</a>
+				      <h4>Data Science</h4>
+				      <p>In excel..</p>
+				    </div>
+				</div>
+				  <div class="column data-science">
+				    <div class="content">
+				      <a href="#img6">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img6">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Data Science</h4>
+				      <p>In excel..</p>
+				    </div>
+				</div>
+				  <div class="column data-science">
+				    <div class="content">
+				      <a href="#img7">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img7">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Data Science</h4>
+				      <p>In excel..</p>
+				    </div>
+				</div>
+				  <div class="column data-science">
+				    <div class="content">
+				      <a href="#img8">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img8">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Data Science</h4>
+				      <p>In excel..</p>
+				    </div>
+				</div>
+				 <div class="column design">
+				    <div class="content">
+				      <a href="#img9">
+				     	 	<img src="2.jpeg" alt="website">
+				  		</a>
+				  		<a href="#_" class="lightbox" id="img9">
+						  <img src="2.jpeg">
+						</a>
+				      <h4>Design</h4>
+				      <p>Project of design..</p>
+				    </div>
+				  </div>
+				
+				</div>
 		</section>
+
+
+		<!-- Price -->
+		<h2 id="price">- Pricing -</h2>
+		<div id="price-columns">
+			<div class="column">
+				<ul>
+					<li class="name"> Basic </li>
+					<li class="price"> 200<span class="smoll"> zł/ms<span></span></li>
+					<li>12 Ipsum Servise</li>
+					<li>40h ipsum</li>
+					<li>24/7 Service</li>
+					<li class="btn">Buy now</li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li class="name"> Pro </li>
+					<li class="price"> 250<span class="smoll"> zł/ms<span></span></li>
+					<li>14 Ipsum Servise</li>
+					<li>60h ipsum</li>
+					<li>24/7 Service</li>
+					<li class="btn">Buy now</li>
+				</ul>
+			</div>
+			<div class="column">
+				<ul>
+					<li class="name"> Premium </li>
+					<li class="price"> 300<span class="smoll"> zł/ms<span></span></li>
+					<li>20 Ipsum Servise</li>
+					<li>120h ipsum</li>
+					<li>24/7 Service</li>
+					<li class="btn">Buy now</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Testimonials -->
+
+		
 
 		<!-- Section D -->
 		<section id="section-d" class="grid">
@@ -97,7 +451,9 @@
 			</div>
 			<div class="box">
 				<h2>Moje CV</h2>
-				<div class="btn">Pobierz</div>
+				<div class="btn">
+					<a href="Anna_Gajda_CV.pdf" download="Anna_Gajda_CV">Pobierz</a>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -107,6 +463,6 @@
 		<div>Copyright c</div>
 		<div>Project By <a href="#" target="_blank">Anna Media 2018</a></div>
 	</footer>
-
+<script type="text/javascript"> filterSelection("all");</script>
 </body>
 </html>
